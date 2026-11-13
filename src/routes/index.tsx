@@ -11,6 +11,7 @@ import {
   UserRoundPlus,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import sookthaLogo from "@/assets/sooktha-ayurveda-hospital-logo.jpeg.asset.json";
 
 const details = {
   phone: "+91 73567 48378",
@@ -40,16 +41,6 @@ function downloadContact() {
   anchor.download = "sooktha-ayurveda-hospital.vcf";
   anchor.click();
   URL.revokeObjectURL(downloadUrl);
-}
-
-function SookthaMark() {
-  return (
-    <svg className="brand-mark" viewBox="0 0 72 72" role="img" aria-label="Sooktha leaf emblem">
-      <path d="M46 7c2 13-4 20-14 23C28 18 34 10 46 7Z" fill="currentColor" />
-      <path d="M35 32c-4 9-12 13-22 11 3 12 13 18 25 15 9-2 15-10 15-20-6 8-13 11-19 9 5-5 7-10 7-16-2-2-4-3-6-4Z" fill="currentColor" />
-      <path d="M48 28c4 3 7 8 7 15 8-7 10-17 5-26-2 6-6 10-12 11ZM35 57v8m-9 0h18m-15 4h12" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="3" />
-    </svg>
-  );
 }
 
 function WhatsappMark() {
@@ -82,9 +73,8 @@ function Index() {
     <main className="profile-page">
       <article className="profile-card" aria-label="Sooktha Ayurveda Hospital business profile">
         <header className="profile-brand">
-          <SookthaMark />
-          <h1>SOOKTHA</h1>
-          <p className="brand-subtitle">AYURVEDA HOSPITAL</p>
+          <h1 className="sr-only">Sooktha Ayurveda Hospital</h1>
+          <img className="brand-logo" src={sookthaLogo.url} alt="Sooktha Ayurveda Hospital logo" />
           <p className="brand-tagline">Feel Better Live Whole</p>
           <div className="trust-pill" aria-label="Trusted Ayurvedic Care">
             <span className="trust-stars" aria-hidden="true">
