@@ -51,6 +51,15 @@ function SookthaMark() {
   );
 }
 
+function WhatsappMark() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20.3 11.8a8.2 8.2 0 0 1-12.1 7.2L4 20l1.1-4a8.2 8.2 0 1 1 15.2-4.2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+      <path d="M9 8.1c.2-.4.4-.4.6-.4h.5c.2 0 .3 0 .4.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.3-.1.5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.5.7c.3.1.4.2.4.4 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-2 .5-1-.2-2.3-.9-3.6-2-1-.9-1.8-2.1-2-2.8-.3-.8 0-1.8.4-2.4Z" fill="currentColor" />
+    </svg>
+  );
+}
+
 function SocialLink({
   href,
   label,
@@ -88,7 +97,7 @@ function Index() {
           <div className="primary-actions">
             <Button asChild className="profile-button button-primary">
               <a href={details.whatsapp} target="_blank" rel="noreferrer">
-                <span className="whatsapp-glyph" aria-hidden="true">◉</span> WhatsApp
+                <WhatsappMark /> WhatsApp
               </a>
             </Button>
             <Button asChild className="profile-button button-outline">
@@ -127,7 +136,7 @@ function Index() {
           </div>
 
           <nav className="social-links" aria-label="Social media and website">
-            <SocialLink href={details.whatsapp} label="WhatsApp"><span className="social-whatsapp">◉</span></SocialLink>
+            <SocialLink href={details.whatsapp} label="WhatsApp"><WhatsappMark /></SocialLink>
             <SocialLink href={details.facebook} label="Facebook"><span className="facebook-glyph">f</span></SocialLink>
             <SocialLink href={details.instagram} label="Instagram"><Instagram aria-hidden="true" /></SocialLink>
             <SocialLink href={details.website} label="Sooktha website"><Globe2 aria-hidden="true" /></SocialLink>
