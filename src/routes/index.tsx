@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import {
   ArrowUpRight,
   Check,
@@ -67,7 +68,7 @@ function SocialLink({
 }: {
   href: string;
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <a className="social-link" href={href} aria-label={label} title={label} target="_blank" rel="noreferrer">
