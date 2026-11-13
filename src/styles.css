@@ -70,29 +70,45 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-profile-ivory: var(--profile-ivory);
+  --color-profile-paper: var(--profile-paper);
+  --color-profile-forest: var(--profile-forest);
+  --color-profile-forest-deep: var(--profile-forest-deep);
+  --color-profile-sage: var(--profile-sage);
+  --color-profile-line: var(--profile-line);
+  --color-profile-gold: var(--profile-gold);
+  --font-body: "DM Sans", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --radius: 0.75rem;
+  --profile-ivory: oklch(0.956 0.025 105);
+  --profile-paper: oklch(0.979 0.019 104);
+  --profile-forest: oklch(0.285 0.048 143);
+  --profile-forest-deep: oklch(0.252 0.045 143);
+  --profile-sage: oklch(0.927 0.022 103);
+  --profile-line: oklch(0.868 0.033 102);
+  --profile-gold: oklch(0.732 0.114 78);
+  --background: var(--profile-ivory);
+  --foreground: var(--profile-forest-deep);
+  --card: var(--profile-paper);
+  --card-foreground: var(--profile-forest-deep);
+  --popover: var(--profile-paper);
+  --popover-foreground: var(--profile-forest-deep);
+  --primary: var(--profile-forest);
+  --primary-foreground: oklch(0.92 0.048 101);
+  --secondary: var(--profile-sage);
+  --secondary-foreground: var(--profile-forest-deep);
+  --muted: var(--profile-sage);
+  --muted-foreground: oklch(0.465 0.035 142);
+  --accent: var(--profile-sage);
+  --accent-foreground: var(--profile-forest-deep);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: var(--profile-line);
+  --input: var(--profile-line);
+  --ring: oklch(0.562 0.067 143);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -109,25 +125,32 @@
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
+  --profile-ivory: oklch(0.956 0.025 105);
+  --profile-paper: oklch(0.979 0.019 104);
+  --profile-forest: oklch(0.285 0.048 143);
+  --profile-forest-deep: oklch(0.252 0.045 143);
+  --profile-sage: oklch(0.927 0.022 103);
+  --profile-line: oklch(0.868 0.033 102);
+  --profile-gold: oklch(0.732 0.114 78);
+  --background: var(--profile-ivory);
+  --foreground: var(--profile-forest-deep);
+  --card: var(--profile-paper);
+  --card-foreground: var(--profile-forest-deep);
+  --popover: var(--profile-paper);
+  --popover-foreground: var(--profile-forest-deep);
+  --primary: var(--profile-forest);
+  --primary-foreground: oklch(0.92 0.048 101);
+  --secondary: var(--profile-sage);
+  --secondary-foreground: var(--profile-forest-deep);
+  --muted: var(--profile-sage);
+  --muted-foreground: oklch(0.465 0.035 142);
+  --accent: var(--profile-sage);
+  --accent-foreground: var(--profile-forest-deep);
   --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
+  --border: var(--profile-line);
+  --input: var(--profile-line);
+  --ring: oklch(0.562 0.067 143);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -151,5 +174,432 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+}
+
+.profile-page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 24px 16px;
+  background: var(--profile-ivory);
+}
+
+.profile-card {
+  width: min(100%, 472px);
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--profile-forest) 7%, transparent);
+  border-radius: 34px;
+  background: var(--profile-paper);
+  box-shadow: 0 14px 34px color-mix(in oklab, var(--profile-forest-deep) 13%, transparent);
+}
+
+.profile-brand {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 18px 0;
+  padding: 23px 16px 25px;
+  border-radius: 29px;
+  background: var(--profile-forest-deep);
+  color: var(--profile-ivory);
+  text-align: center;
+}
+
+.brand-mark {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 0;
+}
+
+.profile-brand h1 {
+  margin: -1px 0 -8px;
+  color: var(--profile-ivory);
+  font-family: var(--font-display);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  margin: 2px 0 0;
+  color: color-mix(in oklab, var(--profile-ivory) 94%, transparent);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+}
+
+.brand-tagline {
+  margin: 7px 0 10px;
+  color: color-mix(in oklab, var(--profile-ivory) 88%, transparent);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-style: italic;
+}
+
+.trust-pill {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 27px;
+  padding: 4px 11px;
+  border: 1px solid color-mix(in oklab, var(--profile-ivory) 14%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--profile-ivory) 9%, transparent);
+  color: var(--profile-ivory);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.trust-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--profile-gold);
+}
+
+.profile-content {
+  padding: 16px 25px 15px;
+}
+
+.primary-actions,
+.secondary-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+}
+
+.profile-button {
+  min-height: 51px;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-button svg,
+.profile-button .whatsapp-mark {
+  width: 17px;
+  height: 17px;
+}
+
+.button-primary {
+  border: 1px solid var(--profile-forest);
+  background: var(--profile-forest);
+  color: var(--profile-ivory);
+  box-shadow: 0 6px 13px color-mix(in oklab, var(--profile-forest-deep) 11%, transparent);
+}
+
+.button-primary:hover {
+  background: var(--profile-forest-deep);
+  color: var(--profile-ivory);
+}
+
+.button-outline {
+  border: 1px solid var(--profile-forest);
+  background: var(--profile-paper);
+  color: var(--profile-forest);
+  box-shadow: none;
+}
+
+.button-outline:hover {
+  background: var(--profile-sage);
+  color: var(--profile-forest-deep);
+}
+
+.contact-list {
+  overflow: hidden;
+  margin-top: 13px;
+  border: 1px solid var(--profile-line);
+  border-radius: 24px;
+  background: var(--profile-sage);
+}
+
+.contact-row {
+  display: flex;
+  min-width: 0;
+  min-height: 53px;
+  align-items: center;
+  gap: 11px;
+  padding: 7px 12px;
+  color: var(--profile-forest-deep);
+  text-decoration: none;
+}
+
+.contact-row + .contact-row {
+  border-top: 1px solid var(--profile-line);
+}
+
+.contact-row:focus-visible,
+.social-link:focus-visible,
+.profile-footer a:focus-visible {
+  outline: 2px solid var(--profile-forest);
+  outline-offset: 3px;
+}
+
+.contact-icon,
+.info-icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  border: 1px solid color-mix(in oklab, var(--profile-forest) 12%, transparent);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--profile-paper) 47%, transparent);
+  color: var(--profile-forest);
+}
+
+.contact-icon svg,
+.info-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.contact-copy,
+.info-copy {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.eyebrow {
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.15px;
+  line-height: 1.4;
+}
+
+.contact-copy strong,
+.info-copy strong {
+  overflow-wrap: anywhere;
+  color: var(--profile-forest-deep);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.row-arrow {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  color: var(--muted-foreground);
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.contact-row:hover .row-arrow {
+  opacity: 1;
+}
+
+.secondary-actions {
+  margin-top: 13px;
+}
+
+.info-button {
+  display: flex;
+  min-width: 0;
+  min-height: 61px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--profile-line);
+  border-radius: 22px;
+  background: var(--profile-paper);
+  color: var(--profile-forest-deep);
+  text-align: left;
+  white-space: normal;
+  box-shadow: 0 5px 12px color-mix(in oklab, var(--profile-forest-deep) 8%, transparent);
+}
+
+.info-button:hover {
+  background: var(--profile-sage);
+  color: var(--profile-forest-deep);
+}
+
+.info-icon {
+  width: 39px;
+  height: 39px;
+  background: var(--profile-forest);
+  color: var(--profile-ivory);
+}
+
+.info-copy strong {
+  font-size: 13px;
+}
+
+.google-g {
+  display: grid;
+  flex: 0 0 auto;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--profile-forest);
+  color: var(--profile-ivory);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 13px 0;
+}
+
+.social-link {
+  display: grid;
+  width: 49px;
+  height: 49px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid color-mix(in oklab, var(--profile-forest) 9%, transparent);
+  border-radius: 50%;
+  background: var(--profile-sage);
+  color: var(--profile-forest);
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  background: var(--profile-paper);
+}
+
+.social-link svg,
+.social-link .whatsapp-mark {
+  width: 19px;
+  height: 19px;
+}
+
+.whatsapp-mark {
+  color: oklch(0.56 0.155 148);
+}
+
+.facebook-glyph {
+  color: oklch(0.51 0.19 257);
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.social-link:nth-child(3) {
+  color: oklch(0.61 0.22 350);
+}
+
+.save-button {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.save-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.profile-footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 11px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footer-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--profile-line));
+}
+
+.footer-rule:nth-of-type(3) {
+  transform: rotate(180deg);
+}
+
+.footer-leaf {
+  color: var(--profile-gold);
+  font-size: 12px;
+}
+
+.profile-footer p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.profile-footer a {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  justify-self: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--profile-forest);
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.profile-footer a svg {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 380px) {
+  .profile-page {
+    padding: 12px 10px;
+  }
+
+  .profile-card {
+    border-radius: 26px;
+  }
+
+  .profile-brand {
+    min-height: 260px;
+    margin: 12px 12px 0;
+    border-radius: 23px;
+  }
+
+  .profile-content {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+
+  .profile-brand h1 {
+    font-size: 44px;
+  }
+
+  .social-links {
+    gap: 7px;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
